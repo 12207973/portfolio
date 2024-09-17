@@ -1,0 +1,466 @@
+@import url('https://fonts.cdnfonts.com/css/storm');
+*{
+    font-family:sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border:none;
+    text-transform: capitalize;
+    transition: all .1s linear;
+}
+html{
+    font-size:62.5%;
+    overflow-x: hidden;
+    
+}
+html::-webkit-scrollbar-track{
+    background:  #0E4D92;
+}
+html::-webkit-scrollbar{
+    width: 0.7rem;
+}
+html::-webkit-scrollbar-thumb{
+    background:var(--red);
+}
+body{
+    overflow-x: hidden;
+    background: #d6e4f4;
+    padding-left: 35rem;
+}
+header{
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background-color: #0E4D92;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+}
+header .showSidebar{
+    transform: translateX(0);
+}
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .2rem solid rgb(20, 0, 0);
+    
+   
+}
+header .user img:hover{transform: scale(1.1);cursor: pointer;}
+header .user .post{
+    font-size:2rem;
+    color:#eee;
+}
+header .user .name{
+    font-size:3.5rem;
+    color:#fff;
+}
+header .user .navbar{
+    width: 100%;
+}
+header .navbar ul{
+    list-style: none;
+    padding:1rem 3rem;
+}
+header .navbar li a{
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background-color: #d6e4f4;
+    font-size: 2rem;
+    border-radius:5rem;
+}
+header  .navbar li a:hover{
+    background-color: bisque;
+}
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid rgb(70, 66, 66);
+}
+.heading span{
+    color: chocolate;
+
+}
+#menu{
+    position: fixed;
+    top:2rem;
+    right:2rem; 
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 2.5rem;
+    height: auto;
+    padding: 1rem 1.5rem;
+    z-index:1000; 
+    display: none;
+}
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+.home h1 span{
+    color:chocolate;
+    
+}
+.home a button img{
+    height:1.5rem;
+    height: 1.5rem;
+    padding-right: .2rem;
+}
+.home a button{
+    font-size: 2rem;
+    background-color:blue;
+    border-radius: .1rem;
+    width:13rem;
+    cursor: pointer;
+    color:white;
+    box-shadow: 2rem 2rem 6rem black;
+    border-radius: 5rem;
+
+
+}
+.home a button:hover{
+     background-color:green;  color:#fff;
+     padding-right: 2rem;
+}
+.home p{
+    font-size: 2rem;
+    color:#281f1f;
+    padding: 1rem 0;
+}
+.home{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding:0 15rem;
+    
+}
+.home h1{
+    font-size: 5rem;
+    color:#1b1717;
+}
+.home h3{
+    font-size: 2.5rem;
+    color:#000000;
+}
+
+@media (max-width:1200px) {
+
+    html{
+    font-size:55%;
+}
+}
+
+@media (max-width:991px) {
+header{
+    transform: translateX(-100%);
+}
+body{
+    padding: 0;
+}
+.home{
+    padding: 1rem 4rem;
+}
+#menu{
+    display: block;
+}
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+   
+}
+.about .row .info{
+flex: 1rem;
+padding: 2rem 1rem;
+padding-left: 5rem;
+}
+.about .row .info h3{
+font-size: 2rem;
+padding: 1rem 0;
+font-weight: normal;
+}
+.about .row .info h3 span{
+    color:rgb(132, 30, 210);
+    padding: 0.5rem;
+    }
+.about .row .counter{
+flex:1 1 48rem;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+.about .row .counter .box{
+    width: 20rem;
+    background: #222;
+    padding: 2rem;
+    border-radius: 2rem;
+    cursor: progress;
+    margin: 2rem;
+    text-align: center;
+    box-shadow: 1rem 1rem 1rem rgb(117, 102, 102);
+}
+.about .row .counter .box:hover{
+    background-color: rgba(0,0,0, 0.4);
+    transition:.6s ease;
+    border-radius: 2rem;
+    width: 20rem;
+    opacity: .7;
+    transform: scale(1.4);
+}
+.about .row .counter span{
+    font-size: 4rem;
+    color:#fff;
+}
+.about .row .counter h3{
+    font-size: 2rem;
+    color:hsl(56, 100%, 52%);
+}.info a button img{
+width: 2rem;
+padding-left: .5rem;
+}
+.info a button{
+    font-size: 2rem;
+    background-color:rgb(255, 255, 255);
+    border-radius: 5rem;
+    border:1px solid black;
+    width: 13rem;
+}
+.info a button:hover{
+    background-color: green;
+    cursor: pointer;
+    color:white;
+    transform: scale(1.2);
+    
+}
+@media(max-width:499px)
+{
+    haeder{
+        width: 100vh;
+    }
+    .heading{
+        margin:0 3rem;
+
+    }
+    .about .row .counter .box{
+        width: 100%;
+    }
+    
+   
+}
+
+.index{
+   background-image: url('https://cdndribbble.com/users/32512/screenshots/3629624/ai_product_v2.gif');
+   padding:0rem;
+   top:0;
+   display: grid;
+   grid-template-columns:70% 29%;
+   background-repeat: no-repeat;
+   background-size:100%;
+}
+.index h1{
+    font-size:3rem;
+    text-align: center;
+    font-family:cursive;
+    color:chocolate;
+    padding:3rem;
+    
+}
+.index .col1{
+    width: 100%;
+    
+}
+.index .col1 img{
+    margin-left: 0px;
+    width: 40rem;
+}
+.index .col2{
+    width: 100%;
+}
+.index .col2 img{
+    width: 15rem;
+    padding:0;
+    margin: 0;margin-left:60px;
+    top:0;
+}
+.index .col2 h1{
+    padding: 0;
+    font-size: 3rem;
+    text-align: center;
+}
+.index .col2 p{
+    font-size: 2rem;
+    font-family:'Lucida Console", "Courier New", monospace';
+    color:#959090
+}
+@media(max-width:740px)
+{
+    .index{
+        padding: 0; 
+        font-size: 50%;
+        margin: 0;
+        grid-template-columns:none;
+        background-color: #000000;
+     }
+     .index .col1 img{
+        width:35rem;
+        margin-left: 15rem;
+     }
+}@media(max-width:500px)
+{
+    .index{
+        padding: 0; 
+        font-size: 50%;
+        margin: 0;
+        grid-template-columns:none;
+     }
+     .index .col1 img{
+        width:35rem;
+        margin-left: 0;
+     }
+}
+@media(max-width:500px)
+{
+    .index{
+        padding: 0; 
+        font-size: 50%;
+        margin: 0;
+        grid-template-columns:none;
+     }
+     .index .col1 img{
+        width:35rem;
+        margin-left: 0;
+     }
+}
+.skills{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(50, 50, 152);
+}
+.skills h1{
+    color:white;
+    font-size: 4rem;
+    padding: 1rem;
+}
+.skills h1 span{
+    color:rgb(255, 217, 0);
+    font-size: 4rem;
+    padding: 1rem;
+}
+.skills .sbox{
+  
+   margin-left:4rem;
+    display: flex;
+    flex-direction:row;
+    opacity: .9;
+    width: 100%;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.skills .skil{
+    width:15rem;
+    background-color: rgb(25, 5, 5);
+    height: 15rem;
+    border-radius: 2rem;
+    color:white;
+    font-size: 3rem;
+    
+}
+.skills .skil:hover{box-shadow: 3px 3px 10px rgb(215, 37, 37);
+transform: scale(1.1);transition: .8s;}
+.skills .skil i{
+    padding: 2rem;
+    font-size: 5rem;
+}
+.education{
+    text-justify: inter-cluster;
+    text-align: center;
+    
+}
+.education h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.education .cole{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: row;
+   
+}
+.education .colr:hover{
+    transform: scale(1);
+    box-shadow:2px 2px 6px rgb(26, 10, 10);
+}
+.education .colr{
+    width: 88%;
+    background-color: #ffffff;
+}
+.education .colr h2,h1,a{
+    padding:1rem;
+    
+    font-size: 2.5rem;
+    text-align: left;
+}
+.education .colr img{
+    width: 20rem;
+    left: 0;height:20rem;
+    padding: 1rem;
+    margin: 0rem;float: left;
+}
+li a{
+    text-align: center;
+}
+@media(max-width:800px)
+{
+    .education .colr{
+        width: 100%;
+        
+    }
+}
+footer{
+    background-color: #222;
+    width:100%; box-shadow: 1rem 1rem 1rem black;
+}
+.foot{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align:left;
+    font-size: 2rem;
+    gap:1rem;
+    color: #fff;
+    padding: 0;
+   
+}
+.foot_item{
+    flex:1 1 4rem;
+    padding: 0;
+    padding-left: 5rem;
+} 
+.foot_item p{
+    font-weight: lighter;
+}
+.foot_item a{
+    padding: 1rem;
+}
+.foot_item a:hover{
+    background-color: #bc0404;
+    border-radius: 100%;
+    opacity: .7;
+}
